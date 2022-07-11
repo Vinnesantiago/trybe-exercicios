@@ -6,3 +6,4 @@ JS
 CSS
 Node
 MongoDB
+JS - Operadores logicos
