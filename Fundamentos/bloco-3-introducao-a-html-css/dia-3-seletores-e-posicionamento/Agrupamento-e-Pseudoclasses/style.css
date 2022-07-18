@@ -1,0 +1,34 @@
+div:hover {
+    border: 1px black solid;
+
+}
+
+#primaria:hover {
+    background-color: red;
+}
+
+#secundaria:hover {
+    background-color: purple;
+}
+
+#complementar:hover {
+background-color: green;
+color: red;
+}
+
+
+#escura:hover{
+    background-color: black;
+    color: white
+}
+#clara:hover{
+    background-color: cadetblue;
+}
+
+div:nth-child(5){
+    font-size: 2em;
+}
+div:nth-child(odd){
+    font-style: italic;
+}
+
