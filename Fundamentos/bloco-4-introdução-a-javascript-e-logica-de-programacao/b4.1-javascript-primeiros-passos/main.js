@@ -15,5 +15,9 @@ console.log(adicao) */
 console.log(subtracao) */
 
 // multiplicacao
-let multiplicacao = a * b
-console.log(multiplicacao)
+/* let multiplicacao = a * b
+console.log(multiplicacao) */
+
+//Divisao
+let divisao = a / b
+console.log(divisao) 
