@@ -6,7 +6,7 @@ let ladoC = 106
 
 let soma = ladoA + ladoB + ladoC
 
-if(soma == 180){
+if(soma == 180 && soma >0){
   console.log(true + " - A soma dos ângulos internos de qualquer triângulo é sempre igual a 180º.")
 } else {
   console.log(false + " - A soma dos ângulos internos de qualquer triângulo é sempre igual a 180º.")
