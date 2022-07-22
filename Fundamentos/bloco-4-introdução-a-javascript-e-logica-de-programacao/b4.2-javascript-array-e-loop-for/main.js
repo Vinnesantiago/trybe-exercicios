@@ -58,7 +58,7 @@ console.log(maior)
 
 
 Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: "nenhum valor ímpar encontrado";
- */
+
 
 let impar = 0
 
@@ -74,3 +74,13 @@ if (impar > 0){
 } else {
   console.log("Não possuimos nenhum numero impar")
 }
+ */
+
+let lowerNumber = numbers[0]
+
+for (let index = 0;index < numbers.length; index++){
+  if(numbers[index] < lowerNumber){
+    lowerNumber = numbers[index]
+  }
+}
+console.log(lowerNumber)
