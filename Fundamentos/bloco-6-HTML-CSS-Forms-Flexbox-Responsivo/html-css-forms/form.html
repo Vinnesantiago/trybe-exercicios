@@ -15,30 +15,53 @@
     <form action="" id="form-container">
       <div class="line-content">
         <label for="full-name">Nome:</label>
-        <input type="text" name="name" id="full-name">
+        <input type="text" name="name" id="full-name" minlength="10" maxlength="40" >
       </div>
       <div class="line-content">
         <label for="email">Email:</label>
-        <input type="email" name="name" id="email">
+        <input type="email" name="name" id="email" minlength="10" maxlength="50">
       </div>
       <div class="line-content">
-        <input type="radio" name="opt" id="opt1" value="Opção1"> <label for="opt1">Opção 1</label>
-        <input type="radio" name="opt" id="opt2" value="Opção2"> <label for="opt2">Opção 2</label>
-        <input type="radio" name="opt" id="opt3" value="Opção3"> <label for="opt3">Opção 3</label>
-        <input type="radio" name="opt" id="opt4" value="Opção4"> <label for="opt4">Opção 4</label>
+        <fieldset >
+          <legend>
+            Destino favorito
+          </legend>
+          <input type="radio" name="opt" id="opt1" value="Opção1"> <label for="opt1">Opção 1</label>
+          <input type="radio" name="opt" id="opt2" value="Opção2"> <label for="opt2">Opção 2</label>
+          <input type="radio" name="opt" id="opt3" value="Opção3"> <label for="opt3">Opção 3</label>
+          <input type="radio" name="opt" id="opt4" value="Opção4"> <label for="opt4">Opção 4</label>
+
+        </fieldset>
       </div>
       <div class="line-content">
-        <label for="answer-text">Espaço para digitar a resposta</label>
-        <textarea name="answer" id="answer-text" cols="30" rows="10"></textarea>
+        <label for="answer-text">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+        <textarea name="answer" id="answer-text" cols="30" rows="10" maxlength="500"></textarea>
       </div>
       <div class="line-content">
-        <label for="date">Data:</label>
+        <label for="date">Qual a melhor data para sua viagem</label>
         <input type="date" pattern="/d{2}-/d{2}-/d{4}" name="name" id="date">
       </div>
+      <div class="line-content">
+        <fieldset>
+          <legend>Gostaria de receber outras oportunidades oferecidas pela Trybe</legend>
+          <label for="agree1">Concordo</label>
+          <input type="checkbox" name="agree1" id="agree1">
+        </div>
+        </fieldset>
+
+      <div class="line-content">
+        <fieldset>
+          <legend>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</legend>
+          <label  for="agree2" >Concordo</label>
+          <input type="checkbox" name="agree2" id="agree2">
+        </div>
+      </fieldset>
+      <button type="submit" id="send">Enviar</button>
+      <button id="delete" >Apagar</button>
     </form>
   </main>
-<footer id="send-btns">
 
 </footer>
+<script src="main.js"></script>
 </body>
 </html>
